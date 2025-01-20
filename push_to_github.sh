@@ -8,7 +8,8 @@ trishikasolutions.com
 EOF
 
 cp -r /opt/trishikasolutions/media .
-cd ..
+cd /home/badal/trishika2024.github.io
+
 git add .
 git commit -m "Website Pushed"
 git push origin
