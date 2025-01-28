@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg,rgb(126, 171, 255),rgb(49, 73, 209));
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 8rem;
+            font-weight: bold;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color:rgb(126, 171, 255);
+            background: #fff;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: rgb(49, 73, 209);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .home-link {
+                font-size: 0.9rem;
+                padding: 12px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .home-link {
+                font-size: 0.8rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist. It might have been moved or deleted.</p>
+        <a href="/" class="home-link">Go Back Home</a>
+    </div>
+</body>
+</html>
