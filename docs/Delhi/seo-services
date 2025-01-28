@@ -14,10 +14,10 @@
     <meta property="og:title" content="seo services" />
     <meta property="og:image" content="http://testserver" />
   
-  <meta property="og:url" content="http://testserver/seo-services" />
+  <meta property="og:url" content="http://testserver/Delhi/seo-services" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="http://testserver/seo-services">
+  <link rel="canonical" href="http://testserver/Delhi/seo-services">
   <!-- OG Meta-->
   <!-- Favicons -->
   <link href="/media/logo/trishika-solutions_1_lFehmsM.png" rel="icon">
@@ -259,7 +259,7 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="usLP0GA2dgE85HTxLeiEt2mbrogoBGvsJMOryiLHNRanLMsLseoJ2E9xkqyvsPaA">
+          <input type="hidden" name="csrfmiddlewaretoken" value="vP2UzVcaayns10D6MjFK0p1lFxHbmZTHDKHGJAw3lg4ZY4wqXxWAH3ByLBtloiDi">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -478,7 +478,7 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="usLP0GA2dgE85HTxLeiEt2mbrogoBGvsJMOryiLHNRanLMsLseoJ2E9xkqyvsPaA">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="vP2UzVcaayns10D6MjFK0p1lFxHbmZTHDKHGJAw3lg4ZY4wqXxWAH3ByLBtloiDi">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -529,7 +529,7 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="usLP0GA2dgE85HTxLeiEt2mbrogoBGvsJMOryiLHNRanLMsLseoJ2E9xkqyvsPaA">
+              <input type="hidden" name="csrfmiddlewaretoken" value="vP2UzVcaayns10D6MjFK0p1lFxHbmZTHDKHGJAw3lg4ZY4wqXxWAH3ByLBtloiDi">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>

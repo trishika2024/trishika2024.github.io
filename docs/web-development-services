@@ -199,7 +199,7 @@
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="3LSMgbvZpsh7YJDULs7yrssyq9V6viObaPxFcjT0y1wWEgfG4gZVx332mUohnlJM">
+          <input type="hidden" name="csrfmiddlewaretoken" value="gPCzL3mzpydsoSSZWe1HxymhLjDrK0sytp5q46iGR0RdfDAxLUNmiGazhEIgRyDH">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -244,6 +244,26 @@
   <div class="container">
     <h3>By Location</h3>
     <div class="accordion row mt-3" id="accordionExample">
+      
+          
+            <div class="col-md-6 mb-3">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingDelhi">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelhi" aria-expanded="true" aria-controls="collapseDelhi">
+                        DELHI
+                      </button>
+                  </h2>
+                  <div id="collapseDelhi" class="accordion-collapse collapse" aria-labelledby="headingDelhi" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <ul>
+                            <li><a href="/Delhi/web-development-services">Delhi</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          
       
     </div>
   </div>
@@ -382,7 +402,7 @@
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="3LSMgbvZpsh7YJDULs7yrssyq9V6viObaPxFcjT0y1wWEgfG4gZVx332mUohnlJM">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="gPCzL3mzpydsoSSZWe1HxymhLjDrK0sytp5q46iGR0RdfDAxLUNmiGazhEIgRyDH">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -433,7 +453,7 @@
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="3LSMgbvZpsh7YJDULs7yrssyq9V6viObaPxFcjT0y1wWEgfG4gZVx332mUohnlJM">
+              <input type="hidden" name="csrfmiddlewaretoken" value="gPCzL3mzpydsoSSZWe1HxymhLjDrK0sytp5q46iGR0RdfDAxLUNmiGazhEIgRyDH">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>

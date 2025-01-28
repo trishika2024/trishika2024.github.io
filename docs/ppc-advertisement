@@ -225,7 +225,7 @@
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="n0WnHR1ZVPKHdDKOdBVfYfqatNHyaNDBKL11yDLHVjovCVwsNpSg7sQr2YrjcHV5">
+          <input type="hidden" name="csrfmiddlewaretoken" value="AjOigM6zrw7VEvm1QFLlHsZSfkkwM0lJpAWjfD9SbbU0uuKXufd2jjZs1br5GHqa">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -270,6 +270,26 @@
   <div class="container">
     <h3>By Location</h3>
     <div class="accordion row mt-3" id="accordionExample">
+      
+          
+            <div class="col-md-6 mb-3">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingDelhi">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelhi" aria-expanded="true" aria-controls="collapseDelhi">
+                        DELHI
+                      </button>
+                  </h2>
+                  <div id="collapseDelhi" class="accordion-collapse collapse" aria-labelledby="headingDelhi" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <ul>
+                            <li><a href="/Delhi/ppc-advertisement">Delhi</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          
       
     </div>
   </div>
@@ -410,7 +430,7 @@ Our expertise in Pay Per Click Services in Delhi ensures real-time tracking and 
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="n0WnHR1ZVPKHdDKOdBVfYfqatNHyaNDBKL11yDLHVjovCVwsNpSg7sQr2YrjcHV5">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="AjOigM6zrw7VEvm1QFLlHsZSfkkwM0lJpAWjfD9SbbU0uuKXufd2jjZs1br5GHqa">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -461,7 +481,7 @@ Our expertise in Pay Per Click Services in Delhi ensures real-time tracking and 
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="n0WnHR1ZVPKHdDKOdBVfYfqatNHyaNDBKL11yDLHVjovCVwsNpSg7sQr2YrjcHV5">
+              <input type="hidden" name="csrfmiddlewaretoken" value="AjOigM6zrw7VEvm1QFLlHsZSfkkwM0lJpAWjfD9SbbU0uuKXufd2jjZs1br5GHqa">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
