@@ -14,10 +14,10 @@
     <meta property="og:title" content="seo services" />
     <meta property="og:image" content="http://testserver" />
   
-  <meta property="og:url" content="http://testserver/seo-services/" />
+  <meta property="og:url" content="http://testserver/seo-services" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="http://testserver/seo-services/">
+  <link rel="canonical" href="http://testserver/seo-services">
   <!-- OG Meta-->
   <!-- Favicons -->
   <link href="/media/logo/trishika-solutions_1_lFehmsM.png" rel="icon">
@@ -92,17 +92,17 @@
             <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 
-                <li><a href="/website-design-services/">WEBSITE DESIGN SERVICES</a></li>
+                <li><a href="/website-design-services">WEBSITE DESIGN SERVICES</a></li>
                 
-                <li><a href="/web-development-services/">WEB DEVELOPMENT SERVICES</a></li>
+                <li><a href="/web-development-services">WEB DEVELOPMENT SERVICES</a></li>
                 
-                <li><a href="/digital-marketing-services/">DIGITAL MARKETING SERVICES</a></li>
+                <li><a href="/digital-marketing-services">DIGITAL MARKETING SERVICES</a></li>
                 
-                <li><a href="/seo-services/">SEO SERVICES</a></li>
+                <li><a href="/seo-services">SEO SERVICES</a></li>
                 
-                <li><a href="/social-media-marketing/">SOCIAL MEDIA MARKETING</a></li>
+                <li><a href="/social-media-marketing">SOCIAL MEDIA MARKETING</a></li>
                 
-                <li><a href="/ppc-advertisement/">PPC ADVERTISEMENT</a></li>
+                <li><a href="/ppc-advertisement">PPC ADVERTISEMENT</a></li>
                 
               </ul>
             </li>
@@ -258,7 +258,8 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
       </div>
       <div class="col-md-3">
         <!--form-->
-        <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <input type="hidden" name="csrfmiddlewaretoken" value="LYQ36azL4PIS9Uxtz9DyK4k3jzwpJeX7FAcr9ejqqqjrBf0SRYvynLrZGILhcrJJ">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -285,7 +286,6 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
-
               <button class="btn btn-primary" type="submit">Send Message</button>
             </div>
 
@@ -457,7 +457,8 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
               </div>
     
               <div class="col-lg-7">
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form method="post" class="php-email-form">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="LYQ36azL4PIS9Uxtz9DyK4k3jzwpJeX7FAcr9ejqqqjrBf0SRYvynLrZGILhcrJJ">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -471,8 +472,8 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
                     </div>
     
                     <div class="col-md-12">
-                      <label for="subject-field" class="pb-2">Subject</label>
-                      <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                      <label for="company-field" class="pb-2">Company Name</label>
+                      <input type="text" class="form-control" name="company" id="company-field" required="">
                     </div>
     
                     <div class="col-md-12">
@@ -507,7 +508,8 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <form method="post" class="php-email-form">
+              <input type="hidden" name="csrfmiddlewaretoken" value="LYQ36azL4PIS9Uxtz9DyK4k3jzwpJeX7FAcr9ejqqqjrBf0SRYvynLrZGILhcrJJ">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -545,17 +547,17 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
           <h4>Our Services</h4>
           <ul>
             
-                <li><i class="bi bi-chevron-right"></i><a href="/website-design-services/">Website Design Services</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/website-design-services">Website Design Services</a></li>
                 
-                <li><i class="bi bi-chevron-right"></i><a href="/web-development-services/">Web Development Services</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/web-development-services">Web Development Services</a></li>
                 
-                <li><i class="bi bi-chevron-right"></i><a href="/digital-marketing-services/">Digital Marketing Services</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/digital-marketing-services">Digital Marketing Services</a></li>
                 
-                <li><i class="bi bi-chevron-right"></i><a href="/seo-services/">Seo Services</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/seo-services">Seo Services</a></li>
                 
-                <li><i class="bi bi-chevron-right"></i><a href="/social-media-marketing/">Social Media Marketing</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/social-media-marketing">Social Media Marketing</a></li>
                 
-                <li><i class="bi bi-chevron-right"></i><a href="/ppc-advertisement/">Ppc Advertisement</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="/ppc-advertisement">Ppc Advertisement</a></li>
                 
           </ul>
         </div>
@@ -598,6 +600,7 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
 
   <!-- Vendor JS Files -->
   <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="/static/assets/vendor/php-email-form/validate.js"></script>
   <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/static/assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -608,7 +611,52 @@ As a leading <strong><a href="https://admin.trishikasolutions.com/service/digita
 
   <!-- Main JS File -->
   <script src="/static/assets/js/main.js"></script>
+  <script>
 
+  $(".php-email-form").on("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const $form = $(this); // Reference to the current form
+    const suc = $form.find(".sent-message").hide();
+    const loader = $form.find(".loading");
+    const err = $form.find(".error-message");
+    const formData = $form.serialize(); // Serialize form data
+    const actionUrl = $form.attr("action") // Form action URL
+    const method = $form.attr("method") || "POST"; // Form method
+    // Send the data using AJAX
+    $.ajax({
+        url: "https://admin.trishikasolutions.com/contact/",
+        type: method,
+        data: formData,
+        dataType: "json",
+        success: function (response) {
+            if(response["status"]){
+              suc.show();
+              err.removeClass("d-block")
+            }
+            else{
+              err.html("Form not submitted, please try again!")
+              err.show();
+              suc.removeClass("d-block")
+            }
+            loader.removeClass("d-block");
+            window.setTimeout(function(){
+              suc.removeClass("d-block");
+              err.removeClass("d-block");
+            }, 3000);
+        },
+        error: function (xhr, status, error) {
+            loader.removeClass("d-block");
+            err.html("Form not submitted, please try again!")
+            err.show();
+            window.setTimeout(function(){
+              suc.removeClass("d-block");
+              err.removeClass("d-block");
+            }, 3000);
+        },
+    });
+});
+</script>
 </body>
 
 </html>
