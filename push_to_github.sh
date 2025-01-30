@@ -4,7 +4,7 @@ cd trishika2024.github.io
 
 cd docs
 cat <<EOF >CNAME
-trishikasolutions.com
+www.trishikasolutions.com
 EOF
 
 cp -r /opt/trishikasolutions/media .
