@@ -67,7 +67,7 @@
 
   <!-- Main CSS File -->
   <link href="/static/assets/css/main.css" rel="stylesheet">
-
+  
   <!-- LD JSON-->
 
 <script type="application/ld+json">
@@ -186,7 +186,7 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@trishikasolutions.com?subject=Enquiry%20About%20Digital%20Marketing%20Services%20-%20[Your%20Company%20Name]&body=Hello%20Team,%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20digital%20marketing%20services.%20Could%20you%20please%20provide%20more%20information%20or%20schedule%20a%20call%3F%0A%0ABest%20regards,%0A[Your%20Name]">info@trishikasolutions.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9990910884</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+919990910884">+91 9990910884</a></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           
@@ -214,8 +214,8 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="/" class="">Home</a></li>
+            <li class="dropdown"><a href="#" class=""><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 
                 <li><a href="/website-design-services.html">WEBSITE DESIGN SERVICES</a></li>
@@ -232,8 +232,25 @@
                 
               </ul>
             </li>
-            <li><a href="/products/">Products</a></li>
-            <li><a href="/contact/">Contact Us</a></li>
+            <li class="dropdown"><a class="" href="/products/"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                
+                <li><a href="/product/school-management-system/">SCHOOL MANAGEMENT SYSTEM</a></li>
+                
+                <li><a href="/product/erp-software/">ERP SOFTWARE</a></li>
+                
+                <li><a href="/product/auto-market-software/">AUTO MARKET SOFTWARE</a></li>
+                
+                <li><a href="/product/whatsApp-crm/">WHATSAPP CRM</a></li>
+                
+                <li><a href="/product/billing-software/">BILLING SOFTWARE</a></li>
+                
+                <li><a href="/product/inventory-software/">INVENTORY SOFTWARE</a></li>
+                
+              </ul>
+            </li>
+            <li><a class="" href="/jobs/">Jobs</a></li>
+            <li><a class="" href="/contact/">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -267,22 +284,13 @@
 <section id="about" class="about section position-relative" style="background-image: url(/media/services/social-media-agency-delhi.png);background-repeat: no-repeat; background-size: cover; background-position: center;">
   <div class="overlay"></div>
   <div class="container section-title position-relative text-white">
-    <h1 class="mb-4 text-white">Social Media Marketing Agency in Nawada</h1>
+    <h1 class="mb-4 text-white fw-bold">Social Media Marketing Agency in Nawada</h1>
     <span class="fs-6">Leading #1 Ranked Social Media Marketing Agency in Delhi – Elevate Your Brand, Engage Your Audience, and Drive Results!</span>
     <div class="fs-7 mt-5"><a class="text-white" href="/">Home</a> / Social Media Marketing</div>
   </div>
 </section>
 
 <section id="services" class="services section">
-  <!--
-  <div class="container section-title">
-    <h2>+91 9990910884</h2>
-    <br><br>
-    <h2>info@trishikasolutions.com</h2>
-
-    <p>social media marketing</p>
-  </div>
-  -->
   <div class="container">
 
     <div class="row gy-4">
@@ -409,15 +417,28 @@ With over 3 billion active social media users worldwide, having an active and po
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="4C2hR7PTkKfBwO6urhXUGDgFEXST2yNWvjuYP9pGdYVrqZuMeQaxzraUZp3Eo6FY">
-          <div class="row gy-4">
+          <input type="hidden" name="csrfmiddlewaretoken" value="HCh86L9UvR4rbXGzc5CzP7trMSCC53xeq2rnIowybZxeLIsPf8mrblkzpESHBAUt">
+          <div class="row gy-4 shadow p-3 mb-5 bg-body rounded">
 
-            <div class="col-md-6">
+            <div class="col-md-12">
+              <a href="https://wa.me/919990910884?text=Hello,%20I'm%20interested%20in%20your%20Digital%20Marketing%20services.%20Can%20we%20discuss%20further?"
+                target="_blank" class="btn-cta btn-whatsapp text-center text-white w-100">
+                <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+
+            <div class="col-md-12">
+              <a href="tel:+919990910884" class="btn-cta btn-call text-center text-white w-100">
+                <i class="bi bi-telephone"></i> Call Now
+              </a>
+            </div>
+
+            <div class="col-md-12">
               <label for="name-field" class="pb-2">Your Name</label>
               <input type="text" name="name" id="name-field" class="form-control">
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label for="phone-field-c" class="pb-2">Your Phone*</label>
               <input type="text" class="form-control" name="phone" id="phone-field-c" required="">
             </div>
@@ -437,7 +458,7 @@ With over 3 billion active social media users worldwide, having an active and po
               <textarea class="form-control" name="message" rows="10" id="message-field"></textarea>
             </div>
 
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center mb-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
@@ -645,7 +666,7 @@ With over 3 billion active social media users worldwide, having an active and po
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="4C2hR7PTkKfBwO6urhXUGDgFEXST2yNWvjuYP9pGdYVrqZuMeQaxzraUZp3Eo6FY">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="HCh86L9UvR4rbXGzc5CzP7trMSCC53xeq2rnIowybZxeLIsPf8mrblkzpESHBAUt">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -701,7 +722,7 @@ With over 3 billion active social media users worldwide, having an active and po
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="4C2hR7PTkKfBwO6urhXUGDgFEXST2yNWvjuYP9pGdYVrqZuMeQaxzraUZp3Eo6FY">
+              <input type="hidden" name="csrfmiddlewaretoken" value="HCh86L9UvR4rbXGzc5CzP7trMSCC53xeq2rnIowybZxeLIsPf8mrblkzpESHBAUt">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -720,7 +741,7 @@ With over 3 billion active social media users worldwide, having an active and po
           </a>
           <div class="footer-contact pt-3">
             <p>Plot No 57, Phase-1A, Om Vihar, Uttam Nagar, New Delhi, Delhi, 110059</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+91 9990910884</span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>9990910884</span></p>
             <p><strong>Email:</strong> <span>info@trishikasolutions.com</span></p>
           </div>
         </div>
@@ -778,7 +799,13 @@ With over 3 billion active social media users worldwide, having an active and po
     </div>
 
   </footer>
-
+  <a href="tel:+919990910884" class="sticky-float ph-float text-white" target="_blank">
+    <i class="bi bi-telephone my-float"></i>
+  </a>
+  
+  <a href="https://wa.me/919990910884?text=Hello,%20I'm%20interested%20in%20your%20Digital%20Marketing%20services.%20Can%20we%20discuss%20further?" class="sticky-float wa-float text-white" target="_blank">
+    <i class="bi bi-whatsapp my-float"></i>
+  </a>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -803,6 +830,7 @@ With over 3 billion active social media users worldwide, having an active and po
 
   <!-- Main JS File -->
   <script src="/static/assets/js/main.js"></script>
+  
   <script>
 
   $(".php-email-form").on("submit", function (e) {
