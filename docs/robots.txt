@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://trishikasolutions.com/sitemap.xml
+Sitemap: https://www.trishikasolutions.com/sitemap.xml
