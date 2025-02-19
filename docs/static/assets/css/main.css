@@ -849,7 +849,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, #162132, transparent 30%);
+  background: color-mix(in srgb, #c6fbf98f, transparent 30%) !important;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -886,16 +886,18 @@ section,
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 4px;
-  transition: 0.5s;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  display: inline-b;
+  min-height: 75vh;
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  background-size: cover;
 }
 
-.hero .btn-get-started:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
