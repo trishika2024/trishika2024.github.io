@@ -847,16 +847,6 @@ section,
   background-size: cover;
 }
 
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .hero .container {
   position: relative;
 }
