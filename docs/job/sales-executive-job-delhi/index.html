@@ -469,46 +469,6 @@ Salary may vary depending on experience, responsibilities, and sales targets.</p
         </div>
 
       </div>
-      <!--<div class="col-md-3">
-        <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="hcgyk1koFqL0nv7CCN0MVynSSPxWmwBiuJ2zJ22pY2OnJpPmhINAkBXOGSktku0w">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input type="text" name="name" id="name-field" class="form-control">
-            </div>
-
-            <div class="col-md-6">
-              <label for="phone-field-c" class="pb-2">Your Phone*</label>
-              <input type="text" class="form-control" name="phone" id="phone-field-c" required="">
-            </div>
-
-            <div class="col-md-12">
-              <label for="email-field-c" class="pb-2">Your Email*</label>
-              <input type="email" class="form-control" name="email" id="email-field-c" required="">
-            </div>
-
-            <div class="col-md-12">
-              <label for="company-field" class="pb-2">Company Name</label>
-              <input type="text" class="form-control" name="company" id="company-field">
-            </div>
-
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea class="form-control" name="message" rows="10" id="message-field"></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-              <button class="btn btn-primary" type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
-      </div>-->
     </div>
 
   </div>
@@ -564,7 +524,7 @@ Salary may vary depending on experience, responsibilities, and sales targets.</p
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="hcgyk1koFqL0nv7CCN0MVynSSPxWmwBiuJ2zJ22pY2OnJpPmhINAkBXOGSktku0w">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="PBR54Ud8cyA2NIycXmQ9JA18pHQBoaovjDEywSvWCddWGhxh2SYvRntXincvHjEx">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -620,7 +580,7 @@ Salary may vary depending on experience, responsibilities, and sales targets.</p
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="hcgyk1koFqL0nv7CCN0MVynSSPxWmwBiuJ2zJ22pY2OnJpPmhINAkBXOGSktku0w">
+              <input type="hidden" name="csrfmiddlewaretoken" value="PBR54Ud8cyA2NIycXmQ9JA18pHQBoaovjDEywSvWCddWGhxh2SYvRntXincvHjEx">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -742,6 +702,7 @@ Salary may vary depending on experience, responsibilities, and sales targets.</p
   $('#jobApplicationForm').on("submit", function (e) {
     e.preventDefault();
       var formData = new FormData($('#jobApplicationForm')[0]);
+      formData.append("page_ref", window.location.pathname);
       $.ajax({
           url: 'https://admin.trishikasolutions.com/job/submit-form/',
           type: 'POST',
@@ -768,14 +729,21 @@ Salary may vary depending on experience, responsibilities, and sales targets.</p
     const suc = $form.find(".sent-message").hide();
     const loader = $form.find(".loading");
     const err = $form.find(".error-message");
-    const formData = $form.serialize(); // Serialize form data
+    const formData = $form.serializeArray(); // Serialize form data
+    formData.push({ name: "page_ref", value: window.location.pathname });
+    const formDataObject = {};
+    formData.forEach(item => {
+        formDataObject[item.name] = item.value;
+    });
+    const serializedData = $.param(formDataObject);
+
     const actionUrl = $form.attr("action") // Form action URL
     const method = $form.attr("method") || "POST"; // Form method
     // Send the data using AJAX
     $.ajax({
         url: "https://admin.trishikasolutions.com/contact/",
         type: method,
-        data: formData,
+        data: serializedData,
         dataType: "json",
         success: function (response) {
             if(response["status"]){

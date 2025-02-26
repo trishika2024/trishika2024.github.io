@@ -356,7 +356,7 @@ For more details, visit trishikasolutions.com"
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="rIImYS8fI3nGJ6SNB2At1396U7I4IVmmhZh9JHpFt7jt8N8xWgrG3RUIB6i4NI4U">
+          <input type="hidden" name="csrfmiddlewaretoken" value="g9deE9pYJ9X15PykHxcswtxp4x4igsib4nVqJn3wOkx8zgBt98VaPyyq8UptkV8t">
           <div class="row gy-4 shadow p-3 mb-5 bg-body rounded">
 
             <div class="col-md-12">
@@ -610,7 +610,7 @@ For more details, visit trishikasolutions.com</p>
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="rIImYS8fI3nGJ6SNB2At1396U7I4IVmmhZh9JHpFt7jt8N8xWgrG3RUIB6i4NI4U">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="g9deE9pYJ9X15PykHxcswtxp4x4igsib4nVqJn3wOkx8zgBt98VaPyyq8UptkV8t">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -666,7 +666,7 @@ For more details, visit trishikasolutions.com</p>
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="rIImYS8fI3nGJ6SNB2At1396U7I4IVmmhZh9JHpFt7jt8N8xWgrG3RUIB6i4NI4U">
+              <input type="hidden" name="csrfmiddlewaretoken" value="g9deE9pYJ9X15PykHxcswtxp4x4igsib4nVqJn3wOkx8zgBt98VaPyyq8UptkV8t">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -784,14 +784,21 @@ For more details, visit trishikasolutions.com</p>
     const suc = $form.find(".sent-message").hide();
     const loader = $form.find(".loading");
     const err = $form.find(".error-message");
-    const formData = $form.serialize(); // Serialize form data
+    const formData = $form.serializeArray(); // Serialize form data
+    formData.push({ name: "page_ref", value: window.location.pathname });
+    const formDataObject = {};
+    formData.forEach(item => {
+        formDataObject[item.name] = item.value;
+    });
+    const serializedData = $.param(formDataObject);
+
     const actionUrl = $form.attr("action") // Form action URL
     const method = $form.attr("method") || "POST"; // Form method
     // Send the data using AJAX
     $.ajax({
         url: "https://admin.trishikasolutions.com/contact/",
         type: method,
-        data: formData,
+        data: serializedData,
         dataType: "json",
         success: function (response) {
             if(response["status"]){

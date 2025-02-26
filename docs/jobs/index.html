@@ -495,7 +495,7 @@
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="pVznf0FaOX9SYUBSl5lYiZ2YtwFYhNrGLjzVYyscyJxYNukNI9PGVrtnLGnIhwS4">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="YLryvE1oXQODL6abdnxbisZUCRDyEzgiiuSuAdup4u9T8eBzRrJMCjAtQ3S1OeAZ">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -551,7 +551,7 @@
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="pVznf0FaOX9SYUBSl5lYiZ2YtwFYhNrGLjzVYyscyJxYNukNI9PGVrtnLGnIhwS4">
+              <input type="hidden" name="csrfmiddlewaretoken" value="YLryvE1oXQODL6abdnxbisZUCRDyEzgiiuSuAdup4u9T8eBzRrJMCjAtQ3S1OeAZ">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -669,14 +669,21 @@
     const suc = $form.find(".sent-message").hide();
     const loader = $form.find(".loading");
     const err = $form.find(".error-message");
-    const formData = $form.serialize(); // Serialize form data
+    const formData = $form.serializeArray(); // Serialize form data
+    formData.push({ name: "page_ref", value: window.location.pathname });
+    const formDataObject = {};
+    formData.forEach(item => {
+        formDataObject[item.name] = item.value;
+    });
+    const serializedData = $.param(formDataObject);
+
     const actionUrl = $form.attr("action") // Form action URL
     const method = $form.attr("method") || "POST"; // Form method
     // Send the data using AJAX
     $.ajax({
         url: "https://admin.trishikasolutions.com/contact/",
         type: method,
-        data: formData,
+        data: serializedData,
         dataType: "json",
         success: function (response) {
             if(response["status"]){

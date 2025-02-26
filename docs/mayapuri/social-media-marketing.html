@@ -430,7 +430,7 @@ With over 3 billion active social media users worldwide, having an active and po
       <div class="col-md-3">
         <!--form-->
         <form method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <input type="hidden" name="csrfmiddlewaretoken" value="GIVcxHZe4lbkJuTnpXJduFLtDQpsGEa7R5OhEmBODTp8TpG05P5ULlbNEXEFMiSR">
+          <input type="hidden" name="csrfmiddlewaretoken" value="2qfkK79hGvzIClyCzWFovocnYszdGa2jDkL3F6rilbOAXZzr9iAeyVyBnuWwClm3">
           <div class="row gy-4 shadow p-3 mb-5 bg-body rounded">
 
             <div class="col-md-12">
@@ -679,7 +679,7 @@ With over 3 billion active social media users worldwide, having an active and po
     
               <div class="col-lg-7">
                 <form method="post" class="php-email-form">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="GIVcxHZe4lbkJuTnpXJduFLtDQpsGEa7R5OhEmBODTp8TpG05P5ULlbNEXEFMiSR">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="2qfkK79hGvzIClyCzWFovocnYszdGa2jDkL3F6rilbOAXZzr9iAeyVyBnuWwClm3">
                   <div class="row gy-4">
     
                     <div class="col-md-6">
@@ -735,7 +735,7 @@ With over 3 billion active social media users worldwide, having an active and po
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form method="post" class="php-email-form">
-              <input type="hidden" name="csrfmiddlewaretoken" value="GIVcxHZe4lbkJuTnpXJduFLtDQpsGEa7R5OhEmBODTp8TpG05P5ULlbNEXEFMiSR">
+              <input type="hidden" name="csrfmiddlewaretoken" value="2qfkK79hGvzIClyCzWFovocnYszdGa2jDkL3F6rilbOAXZzr9iAeyVyBnuWwClm3">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -853,14 +853,21 @@ With over 3 billion active social media users worldwide, having an active and po
     const suc = $form.find(".sent-message").hide();
     const loader = $form.find(".loading");
     const err = $form.find(".error-message");
-    const formData = $form.serialize(); // Serialize form data
+    const formData = $form.serializeArray(); // Serialize form data
+    formData.push({ name: "page_ref", value: window.location.pathname });
+    const formDataObject = {};
+    formData.forEach(item => {
+        formDataObject[item.name] = item.value;
+    });
+    const serializedData = $.param(formDataObject);
+
     const actionUrl = $form.attr("action") // Form action URL
     const method = $form.attr("method") || "POST"; // Form method
     // Send the data using AJAX
     $.ajax({
         url: "https://admin.trishikasolutions.com/contact/",
         type: method,
-        data: formData,
+        data: serializedData,
         dataType: "json",
         success: function (response) {
             if(response["status"]){
